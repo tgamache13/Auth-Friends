@@ -2,9 +2,11 @@ import React, { useState } from 'react';
 import api from '../utils/api';
 
 
+
+
 const AddFriendForm = props => {
     const [friend, setFriend] = useState({
-        
+        id: '',
         name: '',   
         age: '',
         email: ''
@@ -44,6 +46,7 @@ const AddFriendForm = props => {
 
                 <button className='add-button'type='submit'>Add Friend</button>
             </form>
+            
         </div>
     )
 }
