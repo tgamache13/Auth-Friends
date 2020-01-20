@@ -37,12 +37,12 @@ const AddFriendForm = props => {
 
     return(
         <div>
-            <form onSubmit={handleSubmit}>
-                <input type='text' name='name' placeholder='Name' value={friend.name} onChange={handleChange} />
-                <input type='text' name='age' placeholder='Age' value={friend.age} onChange={handleChange}/>
-                <input type='text' name='email' placeholder='Email' value={friend.email} onChange={handleChange}/>
+            <form className='add-form-inputs' onSubmit={handleSubmit}>
+                <input className='add-name' type='text' name='name' placeholder='Name' value={friend.name} onChange={handleChange} />
+                <input className='add-age' type='text' name='age' placeholder='Age' value={friend.age} onChange={handleChange}/>
+                <input className='add-email'type='text' name='email' placeholder='Email' value={friend.email} onChange={handleChange}/>
 
-                <button type='submit'>Add Friend</button>
+                <button className='add-button'type='submit'>Add Friend</button>
             </form>
         </div>
     )

@@ -33,13 +33,15 @@ function Login(props) {
         
     }
     return (
-        <form onSubmit={handleSubmit}>
+        <form className='login-form'onSubmit={handleSubmit}>
             {error && <div className='error'>{error}</div>}
+            <h3>Please login to get to your Dashboard</h3>
+            <div className='login-form-inputs'>
+                <input className='user-name' type='text' name='username' placeholder='User Name' value={user.username} onChange={handleChange}/>
+                <input className='password' type='password' name='password' placeholder='Password' value={user.password} onChange={handleChange} />
 
-            <input type='text' name='username' placeholder='User Name' value={user.username} onChange={handleChange}/>
-            <input type='password' name='password' placeholder='Password' value={user.password} onChange={handleChange} />
-
-            <button type='submit'>Sign In</button>
+                <button className='sign-in' type='submit'>Sign In</button>
+            </div>
         </form>
     )
 }

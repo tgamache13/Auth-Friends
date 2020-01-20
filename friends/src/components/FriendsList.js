@@ -18,7 +18,7 @@ function FriendsList(props) {
     }, [])
     return(
         <>
-            <div>
+            <div className='friendList'>
                 {friends && friends.map(friend => <Friend key={friend.id} {...friend} />)}
             </div>
         </>

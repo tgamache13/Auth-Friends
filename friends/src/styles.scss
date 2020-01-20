@@ -1,0 +1,48 @@
+.friendCard {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid purple;
+    border-radius: 5px;
+    box-shadow: 3px 6px 6px purple;
+}
+.friendList {
+    display: flex;
+}
+.dash-list-link , .dash-add-link{
+    color: white;
+    background-color: purple;
+    padding: 3px;
+    margin: 4px;
+    width: 100px;
+    text-decoration-line: none;
+    border-radius: 2px;
+}
+.dash-buttons {
+    display: flex;
+    flex-direction: column;
+}
+.dashboard-link , .login-link, .logout-link{
+    margin: 10px;
+    color: white;
+    text-decoration-line: none;
+}
+nav {
+    background-color: black;
+}
+.login-form-inputs, .add-form-inputs {
+    margin: 10px;
+    .user-name, .password ,.add-name, .add-age, .add-email{
+        margin: 5px;
+        width: 200px;
+        height: 20px;
+    }
+    .sign-in , .add-button{
+        width: 80px;
+        height: 25px;
+        color: white;
+        background-color: purple;
+        border-radius: 5px;
+    }
+}

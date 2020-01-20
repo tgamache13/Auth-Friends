@@ -14,12 +14,11 @@ function App() {
   const loggedIn = getToken(true)
   return (
     <div className="App">
-      
-        <Link to='/'>Home</Link>
-        {!loggedIn && <Link to='/login'>Login</Link>}
-        {loggedIn && <Link to='dashboard'>Dashboard</Link>}
-        {loggedIn && <Link to='/logout'>Logout</Link>}
-
+      <nav>
+        {!loggedIn && <Link to='/login' className='login-link'>Login</Link>}
+        {loggedIn && <Link to='dashboard' className='dashboard-link'>Dashboard</Link>}
+        {loggedIn && <Link to='/logout' className='logout-link'>Logout</Link>}
+      </nav>
         <Switch>
           <Route exact path='/login' component={Login} />
           <PrivateRoute exact path='/friendsList' component={FriendsList} />

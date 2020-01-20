@@ -2,10 +2,10 @@ import React from 'react';
 
 const Friend = (props) => {
     return(
-        <div>
-            <p>{props.id}</p>
-            <p>{props.name}</p>
-            <p>{props.age}</p>
+        <div className='friendCard'> 
+            
+            <h3>{props.name}</h3>
+            <p>Age: {props.age}</p>
             <p>{props.email}</p>
         </div>
     )
